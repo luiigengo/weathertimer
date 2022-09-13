@@ -1,0 +1,111 @@
+:root {
+  font-size: 62.5%;
+  --lumi-zero: 0%;
+  --lumi-cem: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: hsl(250, 50%, var(--lumi-cem));
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+span {
+  color: hsl(250, 50%, var(--lumi-zero));
+  font-size: 15rem;
+}
+
+i {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+}
+
+#wrapper-all {
+  display: flex;
+  gap: 15rem;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+#wrapper button {
+  border: none;
+  font-size: 5rem;
+  color: hsl(250, 50%, var(--lumi-zero));
+  margin: 1rem 3rem;
+}
+
+#controllers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  /* border-radius: 9999px; */
+}
+
+#wrapper-2 {
+  display: flex;
+  gap: 5rem;
+  margin: 5rem;
+}
+
+#wrapper-2 img {
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+#moon,
+#sun {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+.weather-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 4rem;
+}
+
+.weather-row {
+  display: flex;
+}
+
+.bg-fire {
+  background-color: rgba(165, 42, 42, 0.767);
+}
+
+.bg-forest {
+  background-color: rgba(42, 165, 58, 0.767);
+}
+
+.bg-coffee {
+  background-color: rgba(238, 141, 61, 0.247);
+}
+
+.bg-rain {
+  background-color: rgba(41, 100, 139, 0.767);
+}
+
+.hide {
+  display: none;
+}

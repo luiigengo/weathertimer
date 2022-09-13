@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <script
+      src="https://kit.fontawesome.com/240b59a1ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div id="wrapper-all">
+      <div id="wrapper">
+        <div id="timer">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+        <div id="controllers">
+          <button id="play-button">
+            <i class="fa-regular fa-circle-play"></i>
+          </button>
+          <button class="hide" id="pause-button">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button id="set-button">
+            <i class="fa-regular fa-clock"></i>
+          </button>
+          <button class="hide" id="stop-button">
+            <i class="fa-solid fa-stop"></i>
+          </button>
+          <button id="plus-button">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button id="minus-button">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+        </div>
+      </div>
+      <div id="wrapper-2">
+        <div id="weather-row">
+          <div class="weather-wrapper">
+            <img id="forest" src="./images/card01.svg" alt="Floresta" />
+            <input
+              type="range"
+              id="forest-volume"
+              value="0"
+              min="0"
+              max="1"
+              step="0.05"
+            />
+          </div>
+          <div class="weather-wrapper">
+            <img id="rain" src="./images/card02.svg" alt="Raining" />
+            <input
+              type="range"
+              value="0"
+              id="rain-volume"
+              min="0"
+              max="1"
+              step="0.05"
+            />
+          </div>
+        </div>
+
+        <div id="weather-row">
+          <div class="weather-wrapper">
+            <img id="coffee" src="./images/card03.svg" alt="Coffee Shop" />
+            <input
+              type="range"
+              id="coffee-volume"
+              value="0"
+              min="0"
+              max="1"
+              step="0.05"
+            />
+          </div>
+
+          <div class="weather-wrapper">
+            <img id="fire" src="./images/card04.svg" alt="Fire" />
+            <input
+              type="range"
+              id="fire-volume"
+              value="0"
+              min="0"
+              max="1"
+              step="0.05"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img class="hide" id="moon" src="./images/moon.svg" alt="Moon" />
+    <img id="sun" src="./images/sun.svg" alt="Sun" />
+  </body>
+</html>
